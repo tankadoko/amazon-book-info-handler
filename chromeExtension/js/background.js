@@ -1,4 +1,5 @@
-const API_KEY = '';
+import Credential from'credential/Credential.js';
+const API_KEY = Credential.APIKEY;
 const DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
 const SPREADSHEET_ID = '1LcRW3WY_uDXZHpOqYYbvYIM0aS_OvgOUBIU3BEE82zM';
 const SPREADSHEET_TAB_NAME = 'test';
