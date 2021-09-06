@@ -1,5 +1,4 @@
-// 自分のメアドでしか認証できないので、一応安全。認証情報は、当たり前だがpublicなgithubにあげないに越したことはない。
-const API_KEY = 'AIzaSyDaN4uSmfB5i_lZ_2TWbEQkgQDEoTt_C5I';
+const API_KEY = '';
 const DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
 const SPREADSHEET_ID = '1LcRW3WY_uDXZHpOqYYbvYIM0aS_OvgOUBIU3BEE82zM';
 const SPREADSHEET_TAB_NAME = 'test';
