@@ -3,16 +3,33 @@
     "version": "1.0.0",
     "manifest_version": 2,
     "description": "BookHandler saves your time by helping you export amazon book info to your Google Spread Sheet.",
+    "content_security_policy": "script-src 'self' https://apis.google.com/; object-src 'self'",
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "img/BookHandlerIcon.png",
+      "default_title": "GAPI Tutorial"
+      },
     "icons": {
           "32": "img/BookHandlerIcon.png",
           "48": "img/BookHandlerIcon.png",
           "128": "img/BookHandlerIcon.png"
       },
+    "background": {
+      "page": "background.html",
+      "persistent": false
+    },
     "content_scripts": [{
       "matches": ["https://www.amazon.co.jp/*"],
       "css": [
-        "chrome_ex_style.css"
+        "static/chrome_ex_style.css"
       ]
-    }]
+    }],
+    "oauth2": {
+      "client_id": "1014768243646-hdj9ib1gd30p7o8u7j9shnuhgeq7a24m.apps.googleusercontent.com",
+      "scopes": ["https://www.googleapis.com/auth/spreadsheets"]
+    },
+    "permissions": [
+      "identity"
+    ]
   }
   
