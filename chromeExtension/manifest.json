@@ -29,7 +29,11 @@
       "scopes": ["https://www.googleapis.com/auth/spreadsheets"]
     },
     "permissions": [
-      "identity"
+      "identity",
+      "http://*/",
+      "https://*/",
+      "tabs",
+      "https://www.amazon.co.jp/gp/cart/view.html"
     ]
   }
   
